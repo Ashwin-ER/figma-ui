@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Product Card</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Detailed View -->
-    <div class="detailed-view">
-        <img src="wrench.png" alt="Wrench" class="detailed-image">
-        <div class="detailed-info">
-            <h3 class="product-title detailed-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
-            <div class="rating">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                <span class="rating-count">126</span>
+    <div class="product-card">
+        <div class="product-content">
+            <img src="wrench.png" alt="Wrench" class="product-image">
+            <div class="product-details">
+                <h1 class="product-title">Lorem Ipsum Dolor Sit Amet Consectetur</h1>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">126</span>
+                </div>
+                <p class="identifier">Identifier number</p>
             </div>
-            <p class="identifier">Identifier number</p>
             <div class="price-container">
-                <span class="original-price">999 ₽</span>
-                <span class="discounted-price">699 ₽</span>
+                <span class="old-price">999 ₽</span>
+                <span class="new-price">699 ₽</span>
             </div>
-            <div class="action-buttons detailed-buttons">
-                <button class="delivery-btn"><i class="fas fa-truck"></i> Order delivery</button>
-                <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-            </div>
+        </div>
+        <div class="product-actions">
+            <button class="delivery-btn">
+                <span class="icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"></rect>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                </span>
+                Order delivery
+            </button>
+            <button class="cart-btn">
+                <span class="icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </span>
+                Add to cart
+            </button>
         </div>
     </div>
 </body>
